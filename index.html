@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa PT Talk</title>
+    <style>
+        body {
+            background-image: url('pictures/index/index.gif');
+            background-color: #D9E5FF;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>서비스 없음</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>03:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span class="battery">100%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">코코아 PT톡을 시작합니다</h1>
+        <p class="welcome-header__text">
+            코코아 PT톡을 시작하려면 이메일 또는 전화번호와 비밀번호를 입력 후 로그인해 주세요.
+        </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="이메일 또는 전화번호">
+        <input name="password" type="password" placeholder="비밀번호">
+        <input type="submit" value="로그인">
+        <input type="submit" value="새로운 계정 만들기">
+        <input type="submit" value="로그인하지 않고 코코아 PT톡 체험하기">
+        <a href="#">코코아계정 또는 비밀번호 찾기</a>
+    </form>
+
+    <img id="splash-screen" src="pictures/splash/splash.png" alt="">
+
+    <div id="no-mobile">
+        <br> 이 앱은 모바일 버전만 지원합니다. PC 사용 시 창 크기를 줄여주세요. <br>
+        <br>This app supports mobile versions only. Please reduce the window size when using the PC. <br>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f6fe7951ad.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa PT Talk</title>
+    <style>
+        body {
+            height: 115vh;
+        }
+    </style>
+</head>
+<body id="find-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>서비스 없음</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>03:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span class="battery">100%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+        </div>
+    </div>
+
+    <header class="screen-header main-header">
+        <h1 class="screen-header__title main-title">검색</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        </div>
+    </header>
+
+    <main class="main-screen main-find">
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>피트니스 검색</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>쇼핑하기</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-fire"></i>
+                <span>챌린지</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-envelope"></i>
+                <span>이벤트</span>
+            </div>
+        </div>
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">가까운 피트니스 위치</h6>
+            <span>현재 위치에서 가까운 피트니스를 찾지 못하였습니다.</span>
+        </div>
+        <div class="challenges"> <!-- 여기부터 챌린지 게시글-->
+            <div class="challenges__header">
+                <h4>오늘의 추천 콘텐츠</h4>
+                <span>콘텐츠 더 보기 <i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            </div>
+            <div class="challenges-post">
+                <div class="challenges-post__column"> 
+                    <h5 class="challenges-post__title">제리 트레이너의 성공스토리 #3대 875kg</h5>
+                    <h6 class="challenges-post__content">운동 좋아하는 제리의 운동 스토리 🔥</h6>
+                    <div class="challenges-post__member">
+                        <img src="pictures/profiles/jerry.png" />
+                        <span class="challenges-post__member-name">제리 트레이너</span>
+                        <div class="divider"></div>
+                        <span class="challenges-post__member-status">톰과 제리 피트니스</span>
+                    </div>
+                </div>
+                <div class="challenges-post__column">
+                    <div class="challenges-post__photo">
+                        <img src="pictures/posts/jerry-2.jpg" />
+                        <div class="challenges-post__heart-count"><i class="fa-solid fa-heart fa-xs"></i><span> 65926</span></div>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- 여기까지 챌린지 게시글-->
+        <div class="challenges"> <!-- 여기부터 챌린지 게시글-->
+            <div class="challenges__header">
+            </div>
+            <div class="challenges-post">
+                <div class="challenges-post__column"> 
+                    <h5 class="challenges-post__title">오늘 걷지 않으면 내일 뛰자</h5>
+                    <h6 class="challenges-post__content">근면은 일생의 빛이지만 게으름은 일생의 빚이란 말이 있습니다.</h6>
+                    <div class="challenges-post__member">
+                        <img src="pictures/profiles/person.jpg" />
+                        <span class="challenges-post__member-name">3년 유지어터</span>
+                    </div>
+                </div>
+                <div class="challenges-post__column">
+                    <div class="challenges-post__photo">
+                        <img src="pictures/posts/run.jpg" />
+                        <div class="challenges-post__heart-count"><i class="fa-solid fa-heart fa-xs"></i><span> 45672</span></div>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- 여기까지 챌린지 게시글-->
+        <div class="challenges"> <!-- 여기부터 챌린지 게시글-->
+            <div class="challenges__header">
+            </div>
+            <div class="challenges-post">
+                <div class="challenges-post__column"> 
+                    <h5 class="challenges-post__title">다이어트 정석</h5>
+                    <h6 class="challenges-post__content">근손실 없이 다이어트 하는 방법?</h6>
+                    <div class="challenges-post__member">
+                        <img src="pictures/posts/food.jpg" />
+                        <span class="challenges-post__member-name">영양가</span>
+                        <div class="divider"></div>
+                        <span class="challenges-post__member-status">건강이 최고다</span>
+                    </div>
+                </div>
+                <div class="challenges-post__column">
+                    <div class="challenges-post__photo">
+                        <img src="pictures/posts/diat.jpg" />
+                        <div class="challenges-post__heart-count"><i class="fa-solid fa-heart fa-xs"></i><span> 87541</span></div>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- 여기까지 챌린지 게시글-->
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__a" href="friends.html"><i class="fa-regular fa-user fa-xl"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__popup1 badge">7</span>
+                    <i class="fa-regular fa-comment fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__popup2"></span>
+                    <i class="fa-solid fa-ellipsis fa-xl"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <br> 이 앱은 모바일 버전만 지원합니다. PC 사용 시 창 크기를 줄여주세요. <br>
+        <br>This app supports mobile versions only. Please reduce the window size when using the PC. <br>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f6fe7951ad.js" crossorigin="anonymous"></script>
+</body>
+</html>
